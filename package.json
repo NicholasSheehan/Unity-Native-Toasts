@@ -1,0 +1,20 @@
+{
+  "name": "com.unitynative.toasts",
+  "version": "1.0.0",
+  "displayName": "Unity-Native-Toasts",
+  "description": "A Unity plugin to display toasts on iOS and Android",
+  "unity": "2018.3",
+  "dependencies": {
+  },
+  "keywords": [
+    "Plugin",
+    "Native",
+    "Android",
+    "iOS",
+    "Toasts"
+  ],
+  "author": {
+    "name": "Nicholas Sheehan",
+    "url": "https://github.com/NicholasSheehan/Unity-Native-Toasts"
+  }
+}
