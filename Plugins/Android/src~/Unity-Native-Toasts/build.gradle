@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 ext.outputDir = "..\\.."
-ext.outputName = "com.UnityNative.Toasts-v1.0.0"
+ext.outputName = "com.UnityNative.Toasts-v1.0.2"
 
 android {
     compileSdkVersion 28
@@ -18,7 +18,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0.0"
+        versionName "1.0.2"
         project.archivesBaseName = "${outputName}"
     }
 

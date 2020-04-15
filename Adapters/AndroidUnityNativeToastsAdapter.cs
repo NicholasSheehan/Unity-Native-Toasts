@@ -37,14 +37,14 @@ namespace UnityNative.Toasts
         {
             AndroidJNI.AttachCurrentThread();
             
-            toastsJavaClass.Call(ShowLongToastMethodName, toastText);
+            toastsJavaClass.CallStatic(ShowLongToastMethodName, toastText);
         }
 
         public void ShowShortToast(string toastText)
         {
             AndroidJNI.AttachCurrentThread();
             
-            toastsJavaClass.Call(ShowShortToastMethodName, toastText);
+            toastsJavaClass.CallStatic(ShowShortToastMethodName, toastText);
         }
     }
 }

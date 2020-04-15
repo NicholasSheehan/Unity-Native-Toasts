@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.2] - 2020-04-15
+### Changed
+- Calls into Android were looking for instanced methods, whereas static methods needed to be called
+- Split out the methods in Android out into two different methods
+
 ## [1.0.1] - 2020-04-15
 ### Changed
 - Fixed `AndroidUnityNativeToastsAdapter.cs` still having the constructor for `AndroidUnityNativeSharingAdapter.cs` from when it was copied over 

@@ -13,15 +13,22 @@ import androidx.annotation.Keep;
 public class UnityNativeToastsAdapter {
 
     /***
-     * Displays a toast to the user
+     * Displays a long toast to the user
      * @param toastText - Text to display on the toast
-     * @param showLongToast - Should a long toast be shown?
      */
     @Keep
-    public static void ShowToast(String toastText, boolean showLongToast) {
+    public static void ShowLongToast(String toastText) {
 
-        int toastLength = showLongToast ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT;
+        Toast.makeText(UnityPlayer.currentActivity, toastText, Toast.LENGTH_LONG).show();
+    }
 
-        Toast.makeText(UnityPlayer.currentActivity, toastText, toastLength).show();
+    /***
+     * Displays a short toast to the user
+     * @param toastText - Text to display on the toast
+     */
+    @Keep
+    public static void ShowShortToast(String toastText) {
+
+        Toast.makeText(UnityPlayer.currentActivity, toastText, Toast.LENGTH_SHORT).show();
     }
 }
