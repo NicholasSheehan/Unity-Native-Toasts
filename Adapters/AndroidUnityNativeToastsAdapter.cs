@@ -22,11 +22,11 @@ namespace UnityNative.Toasts
         private const string ShowLongToastMethodName = "ShowLongToast";
 
         /// <summary>
-        /// UnityNativeSharingAdapter.java
+        /// UnityNativeToastsAdapter.java
         /// </summary>
         private readonly AndroidJavaClass toastsJavaClass;
 
-        public AndroidUnityNativeSharingAdapter()
+        public AndroidUnityNativeToastsAdapter()
         {
             AndroidJNI.AttachCurrentThread();
 
