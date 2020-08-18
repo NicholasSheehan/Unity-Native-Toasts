@@ -36,7 +36,7 @@
 #elif UNITY_IOS
             return new UnityNativeToasts(new IosUnityNativeToastsAdapter());
 #else
-            return new UnityNativeToasts(new NullUnityNativeToastsAdapter());
+            return new UnityNativeToasts(new NullUnityNativeSharingAdapter());
 #endif
         }
     }
