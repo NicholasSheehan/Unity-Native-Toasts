@@ -1,6 +1,6 @@
 namespace UnityNative.Toasts
 {
-    public class NullUnityNativeSharingAdapter : IUnityNativeToastsAdapter
+    public class NullUnityNativeToastsAdapter : IUnityNativeToastsAdapter
     {
         public void ShowLongToast(string toastText)
         {
