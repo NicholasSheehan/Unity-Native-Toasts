@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.4] - 2020-09-03
+### Changed
+- Updated [README.md](README.md)
+
 ## [1.0.3] - 2020-08-31
 ### Fixed
 - Fixed issue where the class name for `NullUnityNativeSharingAdapter` was not changed during a refactor, leading to duplicate class names
