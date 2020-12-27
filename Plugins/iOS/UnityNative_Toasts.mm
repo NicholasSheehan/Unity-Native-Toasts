@@ -5,22 +5,17 @@
 //
 
 #import "UnityNative_Toasts.h"
+#import "ToastView.h"
 
 inline void ShowToast(const char* toastText, float toastLengthInSeconds)
 {
-    NSString *message = [NSString stringWithUTF8String:toastText];
-
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
-                                                                   message:message
-                                                            preferredStyle:UIAlertControllerStyleAlert];
-
-    UIViewController *rootViewController = UnityGetGLViewController();
+    NSString *toastMessage = [NSString stringWithUTF8String:toastText];
     
-    [rootViewController presentViewController:alert animated:YES completion:nil];
-
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, toastLengthInSeconds * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        [alert dismissViewControllerAnimated:YES completion:nil];
-    });
+    UIViewController* rootViewController = UnityGetGLViewController();
+    
+    UIView* view = rootViewController.view;
+    
+    [ToastView showToastInParentView:view withText:toastMessage withDuaration:toastLengthInSeconds];
 }
 
 //

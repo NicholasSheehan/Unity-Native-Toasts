@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.5] - 2020-12-27
+### Fixed
+- The way the toasts are created no iOS longer block UI input
+
 ## [1.0.4] - 2020-09-03
 ### Changed
 - Updated [README.md](README.md)
