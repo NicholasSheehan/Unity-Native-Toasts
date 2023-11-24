@@ -70,7 +70,8 @@ float const ToastGap = 10.0f;
     toast.alpha = 0.0f;
     toast.layer.cornerRadius = 4.0;
     toast.text = text;
-
+    toast.userInteractionEnabled = NO;
+    
     [parentView addSubview:toast];
 
     [UIView animateWithDuration:0.4 animations:^{
